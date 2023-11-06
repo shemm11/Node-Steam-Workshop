@@ -3,12 +3,12 @@ import * as fs from 'fs'
 import * as path from 'path'
 import { DOWNLOAD_PATH_STEAM, SAVE_PATH_MODS } from "../config/config";
 import { ERROR_CODES, INFO_CODES } from "../../common/enum/codes.enum";
-import { MODS } from "../../common/interfaces/files.interface";
+import { MOD } from "../../common/interfaces/files.interface";
 
 export class TransportService {
   // constructor() { }
 
-  prepareToCopy(collection: MODS[]) {
+  prepareToCopy(collection: MOD[]) {
     logger.info(`INIT prepareToCopy`);
 
     collection.forEach(mod => {

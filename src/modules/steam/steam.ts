@@ -1,8 +1,8 @@
 import { ChildProcessWithoutNullStreams, spawn } from 'child_process';
 import { STEAM_CMD_PATH } from '../config/config';
 import { TransportService } from '../transport/transport';
+import { MOD } from '../../common/interfaces/files.interface';
 import logger from '../../common/logger/logger';
-import { MODS } from '../../common/interfaces/files.interface';
 
 export class SteamSerivce {
   constructor(
@@ -11,7 +11,7 @@ export class SteamSerivce {
 
   steam: ChildProcessWithoutNullStreams
 
-  public spawnSteam(collection: MODS[]) {
+  public spawnSteam(collection: MOD[]) {
     logger.info('INIT spawnSteam');
     const steamCmdArgs = ['+login anonymous'];
     collection.forEach(mod => steamCmdArgs.push(`+workshop_download_item ${mod.appId} ${mod.modId}`));
@@ -28,7 +28,7 @@ export class SteamSerivce {
     });
   }
 
-  exitSteam(code: any, collection: MODS[]) {
+  exitSteam(code: any, collection: MOD[]) {
     logger.info(`SteamCMD has finished working with the code - ${code}`);
     this.transportSerice.prepareToCopy(collection);
   }
