@@ -1,6 +1,6 @@
 {
   "name": "steam-workshop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NodeJS App to download mods from steam workshow",
   "main": "dist/index.js",
   "scripts": {
@@ -10,12 +10,13 @@
     "lint": "npx eslint"
   },
   "author": {
-    "name": "Velamy",
-    "url": "https://gitlab.com/velamy11"
+    "name": "Shemm11",
+    "url": "https://github.com/shemm11"
   },
   "license": "MIT",
   "dependencies": {
     "csv-parser": "^3.0.0",
+    "dotenv": "^16.3.1",
     "winston": "^3.10.0"
   },
   "devDependencies": {
