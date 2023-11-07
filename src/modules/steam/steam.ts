@@ -13,6 +13,10 @@ export class SteamSerivce {
 
   public spawnSteam(collection: MOD[]) {
     logger.info('INIT spawnSteam');
+    collection = collection.map(value => {
+      value.modId = value.modId.replace(/\D/g, '');
+      return value;
+    });
     const steamCmdArgs = ['+login anonymous'];
     collection.forEach(mod => steamCmdArgs.push(`+workshop_download_item ${mod.appId} ${mod.modId}`));
     steamCmdArgs.push('+quit');

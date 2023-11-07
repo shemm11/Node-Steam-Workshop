@@ -17,15 +17,16 @@ To install the service, follow these steps:
 
 After installation, you can use the service to download mods from Steam.
 
-Specify the data for downloading the mods you need.
-1. Open the `user` folder and in it the `config.env` file using Notepad or Notepad++.
-  1. `STEAM_CMD_PATH` - Specify the full path where you installed SteamCMD.
-2. Your second task is to fill in the `mods.csv` file. The file can be opened via Excel or Notepad. This file is a list of applications and mods.
-    1. For each application, you need to specify its ID, which you can find on the SteamDB website. Visit the SteamDB page - `https://steamdb.info/search/?a=all&q=Rimworld`, find your application and copy its ID.
-    2. For each mod, you need to specify its ID, which can be found on the Steam Workshop page. Go to the Steam Workshop page - `https://steamcommunity.com/sharedfiles/filedetails/?id=818773962`, copy the data after ?id= in the address bar and paste it into the mods.csv file, following the example.
-3. Run the `Node-Steam-Workshop` application via the `npm run start` command line or run the `nsw_run.bat` file.
-   1.  On the command line you will be informed that the download is complete. 
-4. In the `downloads` folder you will find the downloaded files.
+After installation you can use the service to download mods from Steam.
+1. open the `user` folder and find the `config.env` file. You can edit it with Notepad++ program or any text editor. In the `config.env` file, specify the path to the installed SteamCMD using the STEAM_CMD_PATH variable, as indicated in the example.
+2. Your next task is to populate the `user/mods.csv` file. You can open this file using an Excel program or a text editor such as Notepad. The mods.csv file is a list of applications and mods. For each application, you need to specify its ID, which you can find on the SteamDB website. Visit the SteamDB page at `https://steamdb.info/search/?a=all&q=Rimworld`, find the application you want and copy its ID. 
+3. For each mod, provide its URL, which can be found on the Steam Workshop page. Go to the Steam Workshop page at `https://steamcommunity.com/workshop/` and locate the desired mod. Copy the mod's URL from the address bar and paste it into the mods.csv file, following the example.
+4. To run the `Node-Steam-Workshop` application, perform the following steps:
+  1. open the Command Prompt.
+  2. Navigate to the project folder.
+  3. Run the npm run start command or run the `nsw_run.bat` file.
+5. On the command line, you will see information about the completion of the download process.
+6. In the downloads folder
 
 ## Support
 
