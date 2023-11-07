@@ -6,7 +6,6 @@ import { ERROR_CODES, INFO_CODES } from "../../common/enum/codes.enum";
 import { MOD } from "../../common/interfaces/files.interface";
 
 export class TransportService {
-  // constructor() { }
 
   prepareToCopy(collection: MOD[]) {
     logger.info(`INIT prepareToCopy`);

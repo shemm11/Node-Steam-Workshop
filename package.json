@@ -1,6 +1,6 @@
 {
   "name": "steam-workshop",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "NodeJS App to download mods from steam workshow",
   "main": "dist/index.js",
   "scripts": {
