@@ -1,0 +1,27 @@
+"InstallConfigStore"
+{
+	"Software"
+	{
+		"Valve"
+		{
+			"Steam"
+			{
+				"AutoUpdateWindowEnabled"		"0"
+				"ipv6check_http_state"		"bad"
+				"ipv6check_udp_state"		"bad"
+				"RecentWebSocket443Failures"		""
+				"RecentWebSocketNon443Failures"		""
+				"RecentUDPFailures"		""
+				"RecentTCPFailures"		""
+				"CellIDServerOverride"		"158"
+				"depots"
+				{
+					"294100"
+					{
+						"DecryptionKey"		"44498055cce67eea5d84c5b6bc1bd5ca9e8c988963aea857574277fc217cbad0"
+					}
+				}
+			}
+		}
+	}
+}

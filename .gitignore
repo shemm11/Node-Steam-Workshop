@@ -38,3 +38,4 @@ lerna-debug.log*
 downloads/*
 info/logs/*
 dist
+/steamcmd/steamapps/workshop

@@ -1,9 +1,9 @@
-import logger from "../../common/logger/logger"
+import logger from '../../common/logger/logger'
 import * as fs from 'fs'
 import * as path from 'path'
-import { DOWNLOAD_PATH_STEAM, SAVE_PATH_MODS } from "../config/config";
-import { ERROR_CODES, INFO_CODES } from "../../common/enum/codes.enum";
-import { MOD } from "../../common/interfaces/files.interface";
+import { DOWNLOAD_PATH_STEAM, SAVE_PATH_MODS } from '../config/config';
+import { ERROR_CODES, INFO_CODES } from '../../common/enum/codes.enum';
+import { MOD } from '../../common/interfaces/files.interface';
 
 export class TransportService {
 
