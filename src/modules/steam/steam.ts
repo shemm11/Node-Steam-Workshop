@@ -32,7 +32,25 @@ export class SteamSerivce {
     });
   }
 
-  exitSteam(code: any, collection: MOD[]) {
+
+  // public spawnSteamByCollection(collection: COLLECTION) {
+  //   logger.info('INIT spawnSteamByCollection');
+  //   const steamCmdArgs = ['+login anonymous'];
+  //   collection.mods.forEach(mod => steamCmdArgs.push(`+workshop_download_item ${collection.app} ${mod}`));
+  //   steamCmdArgs.push('+quit');
+
+  //   this.steam = spawn(STEAM_CMD_PATH, steamCmdArgs);
+
+  //   this.steam.stdout.on('data', (data) => {
+  //     console.log(`stdout: ${data}`);
+  //   });
+
+  //   this.steam.on('close', (code) => {
+  //     this.exitSteam(code, collection);
+  //   });
+  // }
+
+  private exitSteam(code: any, collection: MOD[]) {
     logger.info(`SteamCMD has finished working with the code - ${code}`);
     this.transportSerice.prepareToCopy(collection);
   }

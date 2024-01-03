@@ -16,8 +16,9 @@ export class ConfigService {
 }
 
 
-export const STEAM_CMD_PATH = new ConfigService().get('STEAM_CMD_PATH');
+export const STEAM_CMD_PATH = path.join(__dirname + '../../../../steamcmd/steamcmd');
 export const DOWNLOAD_PATH_STEAM = path.join(STEAM_CMD_PATH + '/../' + 'steamapps/workshop/content'); // Path to steamCMD workshop content
 export const SAVE_PATH_MODS = path.join(__dirname + '../../../../downloads/'); // Path to save mods
 export const MODS_ID_COLLECTION = path.join(__dirname + '/../../../' + 'user/mods.csv');
+export const WORKSHOP_COLLECTION = path.join(__dirname + '/../../../' + 'user/collections.txt');
 

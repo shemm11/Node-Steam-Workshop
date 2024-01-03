@@ -1,11 +1,12 @@
 {
   "name": "steam-workshop",
-  "version": "0.1.2",
+  "version": "0.2.2",
   "description": "NodeJS App to download mods from steam workshow",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node dist/index.js",
-    "start:dev": "tsc && node dist/index.js",
+    "start": "tsc && node dist/start/index.js",
+    "start:dev": "tsc && node dist/start/index.js",
+    "start:collection": "tsc && node dist/start/collection.js",
     "build": "tsc",
     "lint": "npx eslint"
   },
@@ -15,6 +16,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "axios": "^1.6.2",
+    "cheerio": "^1.0.0-rc.12",
     "csv-parser": "^3.0.0",
     "dotenv": "^16.3.1",
     "winston": "^3.10.0"
